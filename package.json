@@ -21,6 +21,8 @@
     "@vanilla-extract/next-plugin": "^2.4.12",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-sort-imports": "^1.8.8",
     "typescript": "^5"
   }
 }
