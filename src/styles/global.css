@@ -2,10 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font: inherit;
+  color: inherit;
+  tab-size: 2;
+}
+
+html {
+  font-size: 62.5%;
+
+  /* 모바일 선택 및 탭 하이라이트 제거 */
+  text-size-adjust: 100%;
+  /* 화면 넘어가는 단어 자동 줄바꿈 */
+  overflow-wrap: break-word;
+  /* 부드러운 스크롤 */
+  scroll-behavior: smooth;
+  /* 모바일 선택 및 탭 하이라이트 제거 */
+  -webkit-tap-highlight-color: transparent;
+  /* 폰트 렌더링 선명하게 */
+  -webkit-font-smoothing: antialiased
+}
+
+body {
+  font-family: 'Dotum', 'Apple SD Gothic Neo', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 html, body {
-  height: 100%;
+  min-width: 100dvw;
+  min-height: 100%;
 }
 
 ul, ol {
@@ -14,27 +40,30 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
-button {
+button,
+input,
+textarea {
   background: none;
   border: none;
   cursor: pointer;
-  font: inherit;
+}
+
+/* 스크롤, 확대 및 축소 등의 동작 차단, 클릭만 허용 */
+a, button {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 @font-face {
   font-family: 'Galmuri9';
-  src: url('/fonts/Galmuri9.woff2') format('woff2');
+  src: url('/public/fonts/Galmuri9.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-/* 3. Global body 스타일 */
-body {
-  font-family: 'Galmuri9', 'Dotum', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
 }
