@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+@font-face {
+  font-family: 'Galmuri9';
+  src: url('/fonts/Galmuri9.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3. Global body 스타일 */
+body {
+  font-family: 'Galmuri9', 'Dotum', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
