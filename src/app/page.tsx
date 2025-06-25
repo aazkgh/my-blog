@@ -4,6 +4,7 @@ import folderIcon from "@/../public/images/folderImg.png";
 import profileImg from "@/../public/images/profileImg.png";
 import Image from 'next/image';
 import * as styles from '@/styles/page.css';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -45,10 +46,10 @@ const Home = () => {
             { src: '/images/블로그썸네일07.jpg', title: '디카를 샀어요. 이쁜 사진 ♡' },
             { src: '/images/블로그썸네일08.jpg', title: '25 상반기 00은행 면접 후기' },
           ].map((item) => (
-            <div key={item.title} className={styles.thumb}>
+            <Link href="/blog" key={item.title} className={styles.thumb}>
               <Image src={item.src} alt={item.title} width={120} height={80} />
               <p>{item.title}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </Window>

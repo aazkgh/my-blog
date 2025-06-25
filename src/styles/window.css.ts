@@ -6,6 +6,7 @@ export const window = style({
   boxShadow: '4px 4px 0 #000',
 
   width: '100%',
+  height: '100%',  
   display: 'flex',
   flexDirection: 'column',
   flex: '1',
