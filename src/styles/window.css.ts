@@ -4,10 +4,14 @@ export const window = style({
   border: '2px solid #000',
   backgroundColor: '#fff0ff',
   boxShadow: '4px 4px 0 #000',
+
+  width: '100%',
   display: 'flex',
   flexDirection: 'column',
+  flex: '1',
+
   overflow: 'hidden',
-  fontFamily: `'Galmuri9', 'Dotum', sans-serif`,
+  fontFamily: `'Galmuri9', 'Dotum'`
 });
 
 export const titleBar = style({
@@ -28,13 +32,6 @@ export const title = style({
 export const controls = style({
   display: 'flex',
   gap: '4px',
-});
-
-export const btn = style({
-  width: '10px',
-  height: '10px',
-  backgroundColor: '#fff',
-  border: '1px solid #000',
 });
 
 export const body = style({

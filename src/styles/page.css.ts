@@ -1,10 +1,11 @@
 import { style } from '@vanilla-extract/css';
 
 export const main = style({
+  width: '100%',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: '2rem',
+  padding: '0 1.2rem 0 4rem',
   gap: '2rem',
 });
 
@@ -22,10 +23,13 @@ export const title = style({
   fontFamily: `'Galmuri9', 'Dotum', sans-serif`,
 });
 
-export const windows = style({
+export const upSection = style({
+  width: '100%',
   display: 'flex',
-  flexWrap: 'wrap',
-  gap: '2rem',
+  justifyContent: 'flex-start',
+  gap: '2.4rem',
+
+  maxHeight:'30rem'
 });
 
 export const profile = style({

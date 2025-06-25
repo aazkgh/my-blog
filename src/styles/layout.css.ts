@@ -4,17 +4,20 @@ export const desktop = style({
   backgroundImage: 'url("/images/wallpaperImg.png")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
+
   width: '100dvw',
   height: '100dvh',
-  padding: '1rem',
+  padding: '2rem 4rem',
+
   display: 'flex',
-  flexDirection: 'row',
+  justifyContent: 'space-between',
   gap: '2rem',
 });
 
 export const folders = style({
   display: 'flex',
   flexDirection: 'column',
+  justifyContent: 'flex-end',
   gap: '1.5rem',
 });
 
