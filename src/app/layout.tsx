@@ -15,18 +15,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Image src={homeIcon} alt="홈으로" width={84} height={84} />
             <span className={styles.label}>Home</span>
           </Link>
-          <div className={styles.iconBlock}>
+          <Link href="https://github.com/aazkgh" className={styles.iconBlock}>
             <Image src={folderIcon} alt="프로필" width={84} height={84} />
             <span className={styles.label}>프로필</span>
-          </div>
-          <div className={styles.iconBlock}>
+          </Link>
+          <Link href="https://www.youtube.com/playlist?list=PLJFM9gjR21JaAkQbKf5rtoff-EOSzORiM" className={styles.iconBlock}>
             <Image src={folderIcon} alt="Music" width={84} height={84} />
             <span className={styles.label}>Music is<br/>my life</span>
-          </div>
-          <div className={styles.iconBlock}>
-            <Image src={folderIcon} alt="카테고리" width={84} height={84} />
-            <span className={styles.label}>카테고리</span>
-          </div>
+          </Link>
         </div>
         {children}
       </body>
