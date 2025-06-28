@@ -23,6 +23,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="og:description" content="주니어 개발자, 고가형의 블로그입니다" />
       <meta property="og:image" content="https://aablogz.vercel.app/images/kakao_thumbnail.png" />
       <meta property="og:url" content="https://aablogz.vercel.app/" />
+
+      <link rel="icon" href="/favicon.ico" />
     </Head>
     <html lang="ko">
       <body className={styles.desktop}>
