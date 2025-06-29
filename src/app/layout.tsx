@@ -5,7 +5,6 @@ import folderIcon from "@/../public/images/folderImg.png";
 import homeIcon from "@/../public/images/comrImg.png";
 import * as styles from "@/styles/layout.css";
 import Link from "next/link";
-import Head from "next/head";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
