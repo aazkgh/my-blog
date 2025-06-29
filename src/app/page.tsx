@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
-    <main className={styles.main}>
+    <section className={styles.main}>
       <section className={styles.upSection}>
         <div className={styles.header}>
           <Image src={profileImg} alt="Ordinary Girl" width={500} />
@@ -53,7 +53,7 @@ const Home = () => {
           ))}
         </div>
       </Window>
-    </main>
+    </section>
   );
 }
 

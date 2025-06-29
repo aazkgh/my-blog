@@ -42,7 +42,7 @@ export default function BlogPage() {
   const post = posts['react-refactor'];
 
   return (
-    <main className={styles.postMain}>
+    <section className={styles.postMain}>
       <Window title={post.title}>
         <section className={styles.blogInfo}>
           <Image
@@ -62,6 +62,6 @@ export default function BlogPage() {
           <p>{post.content}</p>
         </div>
       </Window>
-    </main>
+    </section>
   );
 }
