@@ -1,8 +1,10 @@
 import { style } from '@vanilla-extract/css';
 
+import { vars } from '@/styles/monthTheme.css';
+
 export const window = style({
   border: '2px solid #000',
-  backgroundColor: '#fff0ff',
+  backgroundColor: vars.brandSoft,
   boxShadow: '4px 4px 0 #000',
 
   width: '100%',
@@ -16,7 +18,7 @@ export const window = style({
 });
 
 export const titleBar = style({
-  background: 'linear-gradient(to bottom, #fcd3ff, #f7a9f5)',
+  background: `linear-gradient(to bottom, ${vars.brandLight}, ${vars.brand})`,
   padding: '4px 8px',
   display: 'flex',
   justifyContent: 'space-between',
@@ -27,7 +29,7 @@ export const titleBar = style({
 export const title = style({
   fontSize: '14px',
   fontWeight: 'bold',
-  color: '#5f005f',
+  color: vars.brandDark,
 });
 
 export const controls = style({
@@ -39,4 +41,10 @@ export const body = style({
   padding: '12px',
   flex: 1,
   overflow: 'auto',
+});
+
+export const closeButton = style({
+  display: 'flex',
+  padding: 0,
+  cursor: 'pointer',
 });
